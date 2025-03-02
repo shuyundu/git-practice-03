@@ -18,7 +18,8 @@ touch dir1/dir2/foo
 mkdir -p dir3
 touch dir3/bar
 touch dir3/bar_copy
-touch LICENSE README.md
+touch LICENSE
+touch README.md
 
 git add .
 
@@ -32,7 +33,8 @@ mkdir -p dir1
 touch dir1/foo
 mkdir -p dir3
 touch dir3/bar
-touch LICENSE README.md newfile1
+touch LICENSE
+touch README.md
 
 
 git add .
@@ -42,10 +44,11 @@ git push origin branch1
 
 git checkout branch2
 mkdir -p dir1/dir2
-touch dir1/dir2/foo
+touch dir1/dir2/foo_modified
 mkdir -p dir1/dir3
 touch dir1/dir3/newfile2
-
+touch LICENSE
+touch README.md
 
 git add .
 git commit -m "Configured branch2"
